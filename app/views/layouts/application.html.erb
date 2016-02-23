@@ -7,7 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class = "flash"><%= flash.notice %>
+  <%= render 'layouts/navigation' %>
+  <%= render 'layouts/messages' %>
+
   <div id = "container">
     <div id = "content">
       <%= yield %>
